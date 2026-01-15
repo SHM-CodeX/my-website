@@ -1,0 +1,160 @@
+/* BASIC RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* COLORS */
+:root {
+  --main-color: #0f766e;
+  --bg-light: #f9f9f9;
+  --text-dark: #111;
+  --white: #fff;
+}
+
+/* CONTAINERS */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--white);
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar nav {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.navbar nav a {
+  margin: 0 15px;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+.navbar .btn {
+  background: var(--main-color);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: var(--main-color);
+  color: var(--white);
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.hero .container {
+  max-width: 900px;
+  margin: auto;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+h2 {
+  margin-bottom: 30px;
+}
+
+.services, .clients, .testimonials {
+  padding-top: 80px;
+}
+h2 {
+  margin-bottom: 30px;
+}
+
+.services, .clients, .testimonials {
+  padding-top: 80px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.hero-btn:hover {
+  opacity: 0.9;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 0;
+}
+
+/* SERVICES / TESTIMONIALS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.card h3 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+/* CLIENT LOGOS */
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+.logo-item {
+  width: 100px;
+  height: 60px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--bg-light);
+  text-align: center;
+  padding: 40px 0;
+}
+.footer .footer-btn {
+  background: var(--main-color);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.footer p {
+  margin-top: 15px;
+  color: var(--text-dark);
+}
